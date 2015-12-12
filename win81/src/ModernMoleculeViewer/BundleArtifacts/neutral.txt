@@ -1,0 +1,3 @@
+MainPackage=d:\Work\Kobukom\Research\ModernMoleculeViewer\src\ModernMoleculeViewer\bin\Debug\ModernMoleculeViewer_1.0.0.2_Bundle\ModernMoleculeViewer_1.0.0.2_AnyCPU_Debug.appx
+SymbolPackage=d:\Work\Kobukom\Research\ModernMoleculeViewer\src\ModernMoleculeViewer\AppPackages\ModernMoleculeViewer_1.0.0.2_Debug_Test\ModernMoleculeViewer_1.0.0.2_AnyCPU_Debug.appxsym
+ResourcePack=d:\Work\Kobukom\Research\ModernMoleculeViewer\src\ModernMoleculeViewer\bin\Debug\ModernMoleculeViewer_1.0.0.2_Bundle\ModernMoleculeViewer_1.0.0.2_scale-140.appx

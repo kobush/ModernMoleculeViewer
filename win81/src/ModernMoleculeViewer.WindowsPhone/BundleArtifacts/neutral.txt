@@ -1,0 +1,4 @@
+MainPackage=D:\Work\Kobukom\Research\ModernMoleculeViewer\src\ModernMoleculeViewer.WindowsPhone\bin\Debug\ModernMoleculeViewer.WindowsPhone_1.0.0.3_Bundle\ModernMoleculeViewer.WindowsPhone_1.0.0.3_AnyCPU_Debug.appx
+SymbolPackage=D:\Work\Kobukom\Research\ModernMoleculeViewer\src\ModernMoleculeViewer.WindowsPhone\AppPackages\ModernMoleculeViewer.WindowsPhone_1.0.0.3_Debug_Test\ModernMoleculeViewer.WindowsPhone_1.0.0.3_AnyCPU_Debug.appxsym
+ResourcePack=D:\Work\Kobukom\Research\ModernMoleculeViewer\src\ModernMoleculeViewer.WindowsPhone\bin\Debug\ModernMoleculeViewer.WindowsPhone_1.0.0.3_Bundle\ModernMoleculeViewer.WindowsPhone_1.0.0.3_scale-100.appx
+ResourcePack=D:\Work\Kobukom\Research\ModernMoleculeViewer\src\ModernMoleculeViewer.WindowsPhone\bin\Debug\ModernMoleculeViewer.WindowsPhone_1.0.0.3_Bundle\ModernMoleculeViewer.WindowsPhone_1.0.0.3_scale-140.appx

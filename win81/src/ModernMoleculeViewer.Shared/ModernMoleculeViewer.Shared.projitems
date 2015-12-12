@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e588f7c9-881f-4bd7-bad5-2b650408cec5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ModernMoleculeViewer</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\ItemClickCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BooleanToVisibilityConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Atom.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\CAlpha.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Cartoon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Chain.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ChainAtom.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ColorScheme.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Helix.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HetAtom.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HoverObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Molecule.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Residue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ResidueStripItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Ribbon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Sheet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Structure.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Water.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\AdvancedEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\GeometricPrimitiveAdv.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\MoleculeRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\MoleculeViewerEngine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\PerspectiveCamera.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\PersperctiveCameraExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\SphereBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\Stick.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\TouchCameraController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rendering\Vector3Animation.cs" />
+  </ItemGroup>
+</Project>
