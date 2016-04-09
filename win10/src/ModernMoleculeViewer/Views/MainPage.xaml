@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="ModernMoleculeViewer.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    xmlns:viewModels="using:ModernMoleculeViewer.ViewModels"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:behaviors="using:ModernMoleculeViewer.Behaviors"
+    xmlns:mvvm="using:Prism.Windows.Mvvm"
+    RequestedTheme="Dark"
+    mvvm:ViewModelLocator.AutoWireViewModel="True" d:DataContext="{d:DesignInstance viewModels:MainPageViewModel}">
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Command="{Binding OpenCommand}" Label="Open PDB" Icon="OpenFile"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="#FFE4E4E4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--<Button Content="Open PDB" HorizontalAlignment="Left" Height="178" Margin="-3,45,0,0" VerticalAlignment="Top" Width="269"
+                Command="{Binding OpenCommand}" Grid.Row="1" Grid.Column="1"/>-->
+
+
+
+        <Rectangle Fill="#FF40CB92" Grid.ColumnSpan="2"/>
+        <Image Source="ms-appx:///Assets/interknowlogy.png" Grid.Column="1" Margin="0,60,0,0" HorizontalAlignment="Right" Width="250" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0,60,0,0" TextWrapping="Wrap" Text="3D Molecule Viewer" VerticalAlignment="Top" Style="{StaticResource HeaderTextBlockStyle}"/>
+
+
+        <GridView Grid.Row="1" Grid.ColumnSpan="2" ItemsSource="{Binding Molecules}" Padding="116,16,116,56" 
+                  IsItemClickEnabled="True" SelectionMode="None" CanDragItems="False" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False">
+            
+            <GridView.ItemContainerTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition FromHorizontalOffset="80" IsStaggeringEnabled="True" />
+                </TransitionCollection>
+            </GridView.ItemContainerTransitions>
+           
+            <interactivity:Interaction.Behaviors>
+                <behaviors:ItemClickCommand Command="{Binding OpenCommand}" />
+            </interactivity:Interaction.Behaviors>
+            
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Background="Black"  Width="320" Height="240">
+                        <Image Source="{Binding Thumbnail}" />
+                        <TextBlock FontSize="20" Foreground="White" Text="{Binding Name}" Margin="10"/>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+
+            <GridView.ItemContainerStyle>
+                <Style TargetType="GridViewItem">
+                    <Setter Property="Margin" Value="0,0,4,4" />
+                    <Setter Property="Padding" Value="0" />
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                </Style>
+            </GridView.ItemContainerStyle>
+        </GridView>
+    </Grid>
+</Page>
